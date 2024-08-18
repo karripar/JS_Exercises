@@ -1,0 +1,88 @@
+html {
+    font-family: 'Roboto Condensed', 'Josefin Sans', sans-serif;
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+    background: linear-gradient(135deg, #000000, #2c2c2c, #434343, #000000);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    overflow: hidden;
+    /* grey alternative --> linear-gradient(135deg, #2E2E2E, #B3B3B3, #2E2E2E);*/
+    /* black alternative --> linear-gradient(135deg, #000000, #4D4D4D, #000000);*/
+    /* pink alternative --> linear-gradient(135deg, #FF1493, #FFC0CB, #FF1493);*/
+    /* light blue alternative --> linear-gradient(135deg, #3399FF, #99CCFF, #3399FF);*/
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    margin: auto;
+    justify-content: center;
+    background-color: transparent;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+}
+
+main {
+    background-color: transparent;
+    height: 100%;
+    display: block;
+    margin: auto;
+    padding: 5rem;
+
+}
+
+.container {
+    margin: auto;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 300px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#results {
+    margin-top: 20px;
+    max-height: 650px;
+    overflow-y: auto;
+}
+
+.result-item {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px #888888;
+    text-align: center;
+}
+
+.result-item a {
+    text-decoration: none;
+    color: #eeeaaa;
+    font-size: 18px;
+}
+
+.result-item a:hover {
+    text-decoration: underline;
+}
+
+.result-snippet {
+    font-size: 14px;
+    color: #eeee;
+    margin-top: 5px;
+}
